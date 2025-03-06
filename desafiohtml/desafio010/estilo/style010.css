@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'robos';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'moderna';
+    src: url('../fontes/CODE Bold.otf') format('opentype');
+    font-weight: lighter;
+    font-size: 1em;
+}
+  
+
+:root{
+    --cor0: #6C856F; 
+    --cor1: #73B37B; 
+    --cordefundo: #69db765e;
+    --cor3: #3a503d;  
+    --cor4: #50FF64;
+    
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "moderna", sans-serif;
+    --fonte-robos: 'robos';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cordefundo);
+    font-family: var(--font-padrao);
+}
+
+header{
+    width: auto;
+    min-height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding-top: 20px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.516);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    max-width: 700px;
+    margin: auto;
+    
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.516);
+
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    min-width: 280px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.220);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+main img{
+    width: 100%;
+
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+main h1{
+    color: var(--cor3);
+    font-family: var(--fonte-robos);
+    font-weight: normal;
+    font-size: 2em;
+}
+
+main h2{
+    color: #55755a;
+    font-family: var(--fonte-robos);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+main a.links{
+    color: #486f4f;
+    background-color: #6aa17293;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.video{
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+    padding: 25px 20px 59% 20px;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+a.links::after{
+    content: '\1F517';
+}
+
+main a.links:hover{
+    background-color: #6aa17267;
+    text-decoration: underline;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+
+
+nav{
+    background-color: var(--cor3);
+    margin-top: -20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.467);
+}
+
+nav .linksinternos{
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+
+}
+ nav .linksinternos:hover{
+    color: var(--cor4);
+    background-color: #73b37b47;
+    text-decoration: underline;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+ }
+
+strong{
+    color: #598860;
+    font-weight: bold;
+    padding: 5px 3px;
+
+}
+
+aside > h3{
+    color: rgb(229, 227, 227);
+    background-color: #01791985;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 3px 2px 7px rgba(0, 0, 0, 0.516)
+
+}
+
+aside{
+    background-color: #50ff6498;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.312);
+}
+
+aside > ul{
+    list-style-type: '\2714\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
+a.externos{
+    color: #486f4f;
+    background-color: none;
+    font-weight: bold; 
+}
+
+a.externos:hover{
+    color: var(--cor3);
+}
+
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 1px;
+    padding: 5px;
+}
+
+footer p{
+    font-size: 1px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--cor3);
+    background-color: var(--cor4);
+    text-decoration: underline;
+}
