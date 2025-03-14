@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body{background-color: ligthgray;}
+
+
+    
+   
+header, header > nav {
+    flex-flow: column nowrap;
+    padding: 0px;
+}
+header h1{
+    padding: 15px;
+}
+span#burguer{
+    width: 100vw;
+    background-color: rgb(43, 42, 42);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+header > nav > a{
+    width: 90vw;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(85, 84, 84);
+    color: white;
+    border-top: 2px solid gray;
+
+}
+header > nav > a:hover{ 
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+header h1{
+    flex-basis: 50px;
+}
+
+main{
+    margin: 30px;
+    padding: 15px;
+}
+
