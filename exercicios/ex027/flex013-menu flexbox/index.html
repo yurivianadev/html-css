@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and
+    (max-width: 779px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <nav id="item">
+            
+                <a href="#">Home</a>
+                <a href="#">Noticias</a>
+                <a href="#">Esportes</a>
+                <a href="#">Geopolitica</a>
+                <a href="#">Redes sociais</a>
+                <a href="#">Fale conosco</a>
+            
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim a vel voluptates fuga perferendis eveniet voluptatem optio quam error harum nisi laudantium, commodi necessitatibus praesentium quos velit quisquam incidunt deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a inventore sunt ratione aut, provident, dolore soluta, consequatur mollitia dignissimos sed hic recusandae. Aliquid ad quae a quaerat reiciendis autem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum distinctio aut dignissimos commodi saepe excepturi. Sapiente, nesciunt. Unde iusto a inventore dolorem nostrum quidem dolores veniam aliquid magnam perferendis?</p>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 779){
+                item.style.display = 'block'
+            }
+            else{
+                item.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (item.style.display == 'none' ){
+                item.style.display = 'block'}
+            else{
+                item.style.display = 'none'
+            }
+        }
+        
+    </script>
+</body>
+</html>
