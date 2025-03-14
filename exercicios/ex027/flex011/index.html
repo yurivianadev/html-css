@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            color: white;
+        }
+        div.container{
+            background-color: black;
+            display: flex;
+            flex-flow: row nowrap;
+         }
+
+        div.item{
+            background-color: darkblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+        }
+        div#a{
+           
+            flex-grow: 0;
+            flex-shrink: 100;
+        }
+        div#b{
+            
+            flex-grow: 12;
+            flex-shrink: 0;
+        }
+        div#c{
+            
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">MENU</div>
+        <div class="item" id="b"><h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure est, error quae nostrum, ea et autem inventore optio cupiditate eos sed necessitatibus? Rerum nam commodi impedit blanditiis corporis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, magni? Ipsa minima numquam repudiandae labore ratione asperiores harum, cum reprehenderit! Eveniet repudiandae reprehenderit odit nisi nulla id alias aperiam numquam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tempore culpa est repudiandae unde. Blanditiis veritatis in atque debitis cum nisi quo porro, qui voluptas cumque laboriosam est modi tempore.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nulla deleniti provident! Expedita consequuntur, voluptas officia cumque tempore iure qui. Corporis accusamus molestiae, impedit officia ipsam odio ipsum dicta porro!
+        </div>
+        <div class="item" id="c">Propaganda</div>
+        </div>
+    </div>
+</body>
+</html>
